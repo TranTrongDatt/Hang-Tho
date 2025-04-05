@@ -1,0 +1,160 @@
+/* 🌟 Danh sách sản phẩm */
+.main-content {
+    padding-top: 30px; /* Đẩy nội dung xuống dưới để tránh bị che bởi navbar */
+    flex: 1;
+}
+
+/* 🌟 Tiêu đề danh sách */
+h1.text-warning {   
+    font-size: 3rem; /* Kích thước lớn */
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    color: #ffcc00; /* Màu chữ vàng */
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.8), 
+                 -3px -3px 5px rgba(0, 0, 0, 0.8), 
+                 3px -3px 5px rgba(0, 0, 0, 0.8), 
+                 -3px 3px 5px rgba(0, 0, 0, 0.8); /* Viền đen xung quanh */
+    padding: 10px;
+}
+
+/* 🌟 Card sản phẩm */
+.card {
+    transition: all 0.3s ease-in-out;
+    border: 2px solid #ffcc00;
+    overflow: hidden;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background: rgba(34, 34, 34, 0.8) !important; /* Màu xám than với độ trong suốt */
+    backdrop-filter: blur(5px); /* Làm mờ nền phía sau giúp nổi bật */
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 15px rgba(255, 204, 0, 0.7);
+    background: rgba(50, 50, 50, 0.9); /* Màu sáng hơn khi hover */
+}
+
+/* 🌟 Ảnh sản phẩm */
+.card-img-top {
+    height: 220px;
+    object-fit: cover;
+    transition: all 0.3s ease-in-out;
+}
+
+.card-img-top:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(255, 204, 0, 0.7);
+}
+
+/* 🌟 Nội dung card */
+.card-body {
+    padding: 15px;
+    text-align: center;
+    color: white; /* Chữ trắng để dễ đọc */
+}
+
+/* 🌟 Tiêu đề sản phẩm */
+.card-title a {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #ffcc00; /* Màu vàng chủ đạo */
+    transition: color 0.3s;
+}
+.card-title a:hover {
+    color: #ffffff !important;
+}
+
+/* 🌟 Giá sản phẩm */
+.text-danger {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+/* 🌟 Các nút trong card */
+.btn-warning, .btn-danger {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-warning:hover {
+    background-color: #e6b800;
+    color: black;
+}
+
+.btn-danger:hover {
+    background-color: #ff3333;
+    color: white;
+}
+
+/* 🌟 Nút Thêm Xe */
+.btn-lg {
+    font-size: 1rem;
+    padding: 12px 24px;
+    font-weight: bold;
+    border: 2px solid #000;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-lg:hover {
+    background-color: #e6b800;
+    color: black;
+    border-color: white;
+}
+
+/* 🌟 Ô Thêm Xe Mới - Đồng bộ với danh sách xe */
+.add-product {
+    background: rgba(255, 204, 0, 0.2); /* Màu vàng nhạt */
+    border: 2px dashed #ffcc00;
+    transition: all 0.3s ease-in-out;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 300px; /* Giữ kích thước giống ô xe */
+}
+
+.add-product:hover {
+    background: rgba(255, 204, 0, 0.4);
+}
+
+.add-product-btn {
+    color: #ffcc00;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.add-product-btn i {
+    font-size: 3rem;
+    display: block;
+}
+
+.add-product-btn:hover {
+    color: white;
+}
+
+/* 🌟 Nút thêm vào giỏ hàng */
+.btn-cart {
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+    background-color: #28a745;
+    color: white;
+    border: 2px solid #1e7e34;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-cart:hover {
+    background-color: #218838;
+    border-color: #19692c;
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(40, 167, 69, 0.8);
+}

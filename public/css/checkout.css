@@ -1,0 +1,109 @@
+/* 🌟 CHECKOUT PAGE */
+.main-content {
+    padding-top: 30px;
+    flex: 1;
+}
+
+/* 🌟 Tiêu đề trang */
+h1.text-warning {
+    font-size: 3rem; /* Kích thước lớn */
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fab978; /* Màu vàng nhạt */
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.8), 
+                 -3px -3px 5px rgba(0, 0, 0, 0.8), 
+                 3px -3px 5px rgba(0, 0, 0, 0.8), 
+                 -3px 3px 5px rgba(0, 0, 0, 0.8); /* Viền đen xung quanh */
+    padding: 10px;
+}
+
+/* 🌟 Container chứa đơn hàng và form */
+.checkout-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+/* 🌟 Đơn hàng */
+.order-summary {
+    flex: 1;
+    padding: 20px;
+    background: #aa7855; /* Màu nâu cà phê */
+    border: 2px solid #b08e6d;
+    border-radius: 10px;
+    color: rgb(222, 221, 205);
+}
+
+.order-summary h2 {
+    color: #fff8d6;
+}
+
+.order-summary .list-group-item span {
+    color: black !important; /* 👉 Chữ sản phẩm và giá màu đen rõ */
+    font-weight: 500;
+}
+
+.order-summary h4 {
+    color: #ffd700; /* Tổng cộng vẫn giữ vàng nổi bật */
+}
+
+/* 🌟 Form thanh toán */
+.payment-form {
+    flex: 1;
+    padding: 20px;
+    background: #dc8a8a9f; /* Màu đỏ nâu */
+    border: 2px solid #fab978;
+    border-radius: 10px;
+    color: white;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    font-weight: bold;
+    color: #fff0e0;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #fab978;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    border-radius: 5px;
+}
+
+.form-control:focus {
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 10px rgba(255, 204, 0, 0.7);
+}
+
+/* 🌟 Nút Đặt Hàng */
+.btn-success {
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 12px 20px;
+    transition: all 0.3s ease-in-out;
+    width: 100%;
+}
+
+.btn-success:hover {
+    background-color: #28a745;
+    color: white;
+}
+
+/* 🌟 Nếu giỏ hàng trống */
+.empty-cart {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fab978;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}

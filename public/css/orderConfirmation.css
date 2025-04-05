@@ -1,0 +1,82 @@
+/* 🌟 ORDER CONFIRMATION PAGE */
+.main-content {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 🌟 Khung thông báo */
+.confirmation-box {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 40px;
+    border-radius: 10px;
+    border: 2px solid #ffcc00;
+    color: white;
+    max-width: 600px;
+    text-align: center;
+}
+
+/* 🌟 Tiêu đề */
+h1.text-warning {
+    font-size: 3rem; /* Kích thước lớn */
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    color: #ffcc00; /* Màu chữ vàng */
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.8), 
+                 -3px -3px 5px rgba(0, 0, 0, 0.8), 
+                 3px -3px 5px rgba(0, 0, 0, 0.8), 
+                 -3px 3px 5px rgba(0, 0, 0, 0.8); /* Viền đen xung quanh */
+    padding: 10px;
+}
+
+/* 🌟 Thông tin đơn hàng */
+.order-details {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.order-details h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-bottom: 2px solid #ffcc00;
+    padding-bottom: 10px;
+}
+
+.order-details ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.order-details li {
+    padding: 8px 0;
+    font-size: 1.1rem;
+}
+
+/* 🌟 Nút hành động */
+.action-buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.btn-warning, .btn-secondary {
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 12px 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-warning:hover {
+    background-color: #e6b800;
+    color: black;
+}
+
+.btn-secondary:hover {
+    background-color: #666;
+}

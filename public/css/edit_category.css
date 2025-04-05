@@ -1,0 +1,107 @@
+/* 🌟 Đảm bảo nội dung không bị navbar che khuất */
+.main-content {
+    padding-top: 30px; /* Đẩy xuống dưới tránh che navbar */
+    flex: 1;
+    padding-bottom: 30px
+}
+
+/* 🌟 Tiêu đề */
+h1.text-warning {
+    font-size: 3rem; /* Kích thước lớn */
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fab978; /* Màu vàng nhạt */
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.8), 
+                 -3px -3px 5px rgba(0, 0, 0, 0.8), 
+                 3px -3px 5px rgba(0, 0, 0, 0.8), 
+                 -3px 3px 5px rgba(0, 0, 0, 0.8); /* Viền đen xung quanh */
+    padding: 10px;
+}
+
+/* 🌟 Card chứa form */
+.card {
+    background: #6F4E37 !important; /* Màu nâu cà phê */
+    border: 2px solid #fab978 !important;
+    padding: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.card:hover {
+    box-shadow: 0 0 15px rgba(255, 204, 0, 0.7) !important;
+}
+
+/* 🌟 Nhãn và input */
+.form-label {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #fab978;
+}
+
+.form-control {
+    background: rgba(255, 255, 255, 0.1) !important;
+    color: white !important;
+    border: 2px solid #fab978 !important;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+.form-control:focus {
+    background: rgba(255, 255, 255, 0.2) !important;
+    box-shadow: 0 0 10px rgba(255, 204, 0, 0.7) !important;
+}
+
+/* 🌟 Select dropdown */
+.form-select {
+    background: rgba(255, 255, 255, 0.1) !important;
+    color: white !important;
+    border: 2px solid #fab978 !important;
+}
+
+/* 🌟 Hiệu ứng hover */
+.form-select:focus {
+    background: rgba(255, 255, 255, 0.2) !important;
+    box-shadow: 0 0 10px rgba(255, 204, 0, 0.7) !important;
+}
+
+/* 🌟 Nút Submit và Quay lại */
+.btn-warning, .btn-secondary {
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-warning {
+    background-color: #fab978 !important;
+    color: black !important;
+    border: 2px solid #854442 !important;
+}
+
+.btn-warning:hover {
+    background-color: #e6b800 !important;
+    color: black !important;
+}
+
+.btn-secondary:hover {
+    background-color: #666 !important;
+}
+
+/* 🌟 File input */
+input[type="file"] {
+    background: rgba(0, 0, 0, 0.6) !important;
+    border: 2px solid #fab978 !important;
+    padding: 2px;
+    color: #fab978 !important;
+}
+
+/* 🌟 Đảm bảo footer luôn dính dưới */
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    flex: 1;
+}

@@ -1,0 +1,16 @@
+.contact-container {
+    background-color: #2f1d14;
+    padding: 20px;
+    border-radius: 12px;
+}
+.contact-container input,
+.contact-container textarea {
+    background-color: #1e1e1e;
+    color: #fff;
+    border: 1px solid #ffc107;
+}
+.contact-container button {
+    background-color: #ffc107;
+    color: #000;
+    border: none;
+}

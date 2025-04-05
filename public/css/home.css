@@ -1,0 +1,129 @@
+/* 🌟 Toàn bộ phần tử nằm trong main */
+.main-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: #f8f8f8;
+}
+
+/* 🌟 Slider container */
+.slider-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+/* 🌟 Các slide ảnh */
+.product-slide {
+    width: 100%;
+    height: 100%;
+    display: none;
+    position: relative;
+}
+
+.product-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Đảm bảo ảnh chiếm hết không gian mà không bị méo */
+}
+
+.product-slide .slide-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+}
+
+.product-slide h2 {
+    font-size: 3rem;
+    color: #fab978;
+    margin-bottom: 10px;
+}
+
+.product-slide p {
+    font-size: 1.2rem;
+    color: white;
+}
+
+/* 🌟 Hiển thị slide hiện tại */
+.product-slide.active {
+    display: block;
+}
+
+/* 🌟 Nút điều khiển slider */
+.slide-controls {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+}
+
+/* 🌟 Nút vuông */
+.slide-btn {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.slide-btn:hover {
+    background-color: #fab978;
+}
+
+/* 🌟 Giới thiệu về Hang Thỏ */
+.intro-text {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 80%;
+}
+
+.intro-text h2 {
+    font-size: 2.5rem;
+    color: #fab978;
+}
+
+.intro-text p {
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+.btn-explore {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #fab978;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.btn-explore:hover {
+    background-color: #e69a3a;
+}
+
+/* 🌟 Media query cho màn hình nhỏ */
+@media (max-width: 768px) {
+    .intro-text {
+        width: 90%;
+    }
+
+    .product-slide img {
+        width: 100%;
+        height: auto;
+    }
+}

@@ -1,0 +1,108 @@
+/* 🌟 Cấu trúc trang */
+.main-content {
+    padding-top: 30px; /* Tránh bị che bởi navbar */
+    flex: 1;
+}
+
+/* 🌟 Tiêu đề sản phẩm */
+h2.mb-0 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 5px rgba(255, 204, 0, 0.6);
+}
+
+/* 🌟 Card hiển thị sản phẩm */
+.card {
+    border-radius: 15px;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    background-color: #6F4E37; /* Màu nâu cà phê */
+}
+
+.card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 20px rgba(255, 204, 0, 0.8); /* Màu vàng cà phê khi hover */
+}
+
+/* 🌟 Tiêu đề trong card */
+.card-title {
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #ffcc00; /* Màu vàng cà phê */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+/* 🌟 Ảnh sản phẩm */
+.img-fluid {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.img-fluid:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(255, 204, 0, 0.6);
+}
+
+/* 🌟 Nội dung sản phẩm */
+.card-text {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+/* 🌟 Giá sản phẩm */
+.text-danger {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-shadow: 1px 1px 5px rgba(255, 0, 0, 0.5);
+}
+
+/* 🌟 Danh mục sản phẩm */
+.badge.bg-warning {
+    font-size: 1rem;
+    padding: 8px 12px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+/* 🌟 Nút điều hướng */
+.btn {
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-success {
+    background-color: #28a745;
+    border: 2px solid #1e7e34;
+}
+
+.btn-success:hover {
+    background-color: #218838;
+    border-color: #1e7e34;
+    box-shadow: 0 0 15px rgba(40, 167, 69, 0.6);
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    border: 2px solid #495057;
+}
+
+.btn-secondary:hover {
+    background-color: #495057;
+    border-color: #343a40;
+    box-shadow: 0 0 15px rgba(108, 117, 125, 0.6);
+}
+
+/* 🌟 Hiệu ứng khi không tìm thấy sản phẩm */
+.alert-danger {
+    font-size: 1.5rem;
+    padding: 20px;
+    font-weight: bold;
+    text-align: center;
+}

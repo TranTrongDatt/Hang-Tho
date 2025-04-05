@@ -1,0 +1,200 @@
+/* 🌟 RESET CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 🌟 Cấu hình nền trang web */
+body {
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    font-family: "Arial", sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Giữ nội dung ít nhất bằng chiều cao màn hình */
+}
+
+/* 🌟 Đảm bảo phần nội dung mở rộng hết phần còn lại */
+.container {
+    flex: 1; /* Đẩy footer xuống dưới */
+}
+
+/* 🌟 Navbar */
+.navbar {
+    background-color: #6F4E37 !important; /* Sử dụng màu nâu cà phê */
+    padding: 15px 50px;
+    border-bottom: 3px solid #fab978; /* Màu vàng cà phê */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+/* 🌟 Navbar - Thương hiệu */
+.navbar-brand {
+    font-family: 'Great Vibes', cursive; /* Chọn font chữ kiểu Script */
+    font-size: 3rem; /* Tăng kích thước chữ cho phần "HangTho" */
+    font-weight: normal; /* Giảm độ đậm của chữ */
+    color: #d58e2a8a; /* Màu nâu đậm cho phần "Hang" */
+}
+
+.navbar-brand span {
+    color: #ab967d; /* Màu nâu nhạt cho phần "Thỏ" */
+}
+
+/* 🌟 Hover hiệu ứng màu chữ "Hang" */
+.navbar-brand:hover {
+    color: #de6666; /* Màu khi hover lên phần chữ "Hang" */
+}
+
+/* 🌟 Navbar - Menu */
+.navbar-nav {
+    margin-left: auto;
+    display: flex;
+    gap: 20px;
+}  
+
+.nav-item {
+    text-align: center;
+}
+
+.nav-link {
+    color: white !important;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #fab978 !important; /* Màu vàng cà phê khi hover */
+}
+
+/* 🌟 Thanh tìm kiếm */
+.form-control {
+    width: 300px; /* Tăng chiều rộng để nổi bật hơn */
+    margin-right: 10px;
+    border-radius: 20px;
+    padding: 8px 15px; /* Điều chỉnh padding để cân đối */
+    border: 2px solid #fab978; /* Thêm viền màu vàng cà phê */
+    transition: all 0.3s ease;
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: #de6666; /* Đổi màu viền khi focus */
+    box-shadow: 0 0 5px #de6666; /* Thêm hiệu ứng ánh sáng */
+}
+
+.btn-outline-success {
+    border-radius: 20px;
+    padding: 8px 15px; /* Giảm padding để vừa với thanh tìm kiếm */
+    font-size: 0.9rem; /* Giảm kích thước chữ */
+    background-color: #fab978; /* Màu vàng cà phê */
+    color: black;
+    border: none; /* Loại bỏ viền */
+    transition: all 0.3s ease;
+}
+
+.btn-outline-success:hover {
+    background-color: #de6666; /* Đổi màu nền khi hover */
+    color: white;
+    box-shadow: 0 0 5px #de6666; /* Thêm hiệu ứng ánh sáng */
+}
+
+.search-bar {
+    position: relative;
+    width: 300px;
+}
+
+#search-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#search-results {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    max-height: 300px;
+    overflow-y: auto;
+    display: none;
+    z-index: 1000;
+}
+
+.search-result-item {
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.search-result-item:last-child {
+    border-bottom: none;
+}
+
+.search-result-item:hover {
+    background-color: #f9f9f9;
+}
+/* 🌟 FOOTER FIX */
+.main-content {
+    flex: 1; /* Đẩy footer xuống */
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* 🌟 FOOTER FIX */
+.footer {
+    background-color: #6F4E37; /* Màu nâu cà phê */
+    color: #fab978; /* Màu vàng cà phê */
+    text-align: center;
+    padding: 0px; /* Giảm chiều cao */
+    font-size: 0.8rem; /* Giảm font chữ */
+    border-top: 2px solid #fab978; /* Màu vàng cà phê */
+    width: 100%;
+    margin-top: auto; /* Giữ cố định dưới cùng */
+}
+
+/* 🌟 Sửa chiều rộng của footer */
+footer .container {
+    width: 100%; /* Đảm bảo chiều rộng của footer sẽ chiếm toàn bộ chiều ngang */
+    max-width: none; /* Loại bỏ bất kỳ giới hạn max-width nào */
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/* 🌟 Điều chỉnh chiều ngang của footer dưới cùng */
+footer .text-center {
+    width: 100%;
+    background-color: #333; /* Màu xám cho thanh dưới cùng */
+    color: #fab978; /* Màu vàng cà phê */
+    padding: 15px 0;
+}
+
+/* 🌟 Nút giỏ hàng */
+.nav-link {
+    position: relative;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+
+#cart-count {
+    font-size: 0.8rem;
+    font-weight: bold;
+    background-color: #fab978; /* Màu vàng cà phê */
+    color: black;
+    border-radius: 50%;
+    padding: 3px 7px;
+    position: absolute;
+    top: 8px;
+    right: 2px;
+}
